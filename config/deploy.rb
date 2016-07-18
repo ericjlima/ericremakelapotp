@@ -1,8 +1,8 @@
 server '209.6.43.2', port: 3000, roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'git@example.com:username/appname.git'
-set :application,     'appname'
-set :user,            'deploy'
+set :repo_url,        'https://github.com/ericjlima/ericremakelapotp.git'
+set :application,     'ericremakelaptop'
+set :user,            'ericjlima'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
