@@ -59,3 +59,7 @@
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
+set :stage, :production
+
+# Replace 127.0.0.1 with your server's IP address!
+server '209.6.43.2', user: 'eric', roles: %w{ericremakelaptop}
