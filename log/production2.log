@@ -1,0 +1,509 @@
+I, [2016-07-24T19:51:45.733620 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 19:51:45 -0400
+F, [2016-07-24T19:51:45.773851 #17653] FATAL -- : 
+ActiveRecord::NoDatabaseError (FATAL:  database "ericremake_production" does not exist
+):
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:665:in `rescue in connect'
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/eric/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/eric/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+I, [2016-07-24T19:52:07.497283 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 19:52:07 -0400
+F, [2016-07-24T19:52:07.562610 #17653] FATAL -- : 
+ActiveRecord::NoDatabaseError (FATAL:  database "ericremake_production" does not exist
+):
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:665:in `rescue in connect'
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/eric/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/eric/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+I, [2016-07-24T19:52:08.283806 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 19:52:08 -0400
+F, [2016-07-24T19:52:08.347362 #17653] FATAL -- : 
+ActiveRecord::NoDatabaseError (FATAL:  database "ericremake_production" does not exist
+):
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:665:in `rescue in connect'
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.4) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/eric/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/eric/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:31:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+  /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+
+I, [2016-07-24T20:35:01.418668 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:35:01 -0400
+I, [2016-07-24T20:35:01.500534 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:35:01.519716 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (1.3ms)
+D, [2016-07-24T20:35:01.562614 #17653] DEBUG -- :   [1m[36mUser Load (26.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+E, [2016-07-24T20:35:01.562844 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:35:01.564659 #17653]  INFO -- : Completed 500 Internal Server Error in 64ms (ActiveRecord: 31.7ms)
+F, [2016-07-24T20:35:01.568036 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+
+I, [2016-07-24T20:35:02.361599 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:35:02 -0400
+I, [2016-07-24T20:35:02.366236 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:35:02.369557 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (0.2ms)
+D, [2016-07-24T20:35:02.378619 #17653] DEBUG -- :   [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+E, [2016-07-24T20:35:02.379342 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:35:02.383534 #17653]  INFO -- : Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.5ms)
+F, [2016-07-24T20:35:02.390538 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+
+I, [2016-07-24T20:35:02.818693 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:35:02 -0400
+I, [2016-07-24T20:35:02.822678 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:35:02.825697 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (0.2ms)
+D, [2016-07-24T20:35:02.834024 #17653] DEBUG -- :   [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+E, [2016-07-24T20:35:02.834411 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:35:02.837472 #17653]  INFO -- : Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.7ms)
+F, [2016-07-24T20:35:02.844952 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+
+I, [2016-07-24T20:37:20.314947 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:37:20 -0400
+I, [2016-07-24T20:37:20.319014 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:37:20.322056 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (0.2ms)
+D, [2016-07-24T20:37:20.332369 #17653] DEBUG -- :   [1m[35mUser Load (3.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+E, [2016-07-24T20:37:20.332762 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:37:20.335725 #17653]  INFO -- : Completed 500 Internal Server Error in 16ms (ActiveRecord: 3.1ms)
+F, [2016-07-24T20:37:20.347276 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+
+I, [2016-07-24T20:37:21.092750 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:37:21 -0400
+I, [2016-07-24T20:37:21.096684 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:37:21.100108 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (0.2ms)
+D, [2016-07-24T20:37:21.108433 #17653] DEBUG -- :   [1m[36mUser Load (2.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+E, [2016-07-24T20:37:21.108821 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:37:21.111792 #17653]  INFO -- : Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.8ms)
+F, [2016-07-24T20:37:21.118515 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+
+I, [2016-07-24T20:37:21.360146 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:37:21 -0400
+I, [2016-07-24T20:37:21.362223 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:37:21.363786 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (0.1ms)
+D, [2016-07-24T20:37:21.367910 #17653] DEBUG -- :   [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+E, [2016-07-24T20:37:21.368117 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:37:21.369626 #17653]  INFO -- : Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.3ms)
+F, [2016-07-24T20:37:21.372750 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+
+I, [2016-07-24T20:37:21.549838 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:37:21 -0400
+I, [2016-07-24T20:37:21.551910 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:37:21.553490 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (0.1ms)
+D, [2016-07-24T20:37:21.557692 #17653] DEBUG -- :   [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+E, [2016-07-24T20:37:21.557971 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:37:21.559813 #17653]  INFO -- : Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.5ms)
+F, [2016-07-24T20:37:21.568821 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+
+I, [2016-07-24T20:37:21.739719 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:37:21 -0400
+I, [2016-07-24T20:37:21.741725 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:37:21.743301 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (0.1ms)
+D, [2016-07-24T20:37:21.747100 #17653] DEBUG -- :   [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+E, [2016-07-24T20:37:21.747284 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:37:21.748740 #17653]  INFO -- : Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.3ms)
+F, [2016-07-24T20:37:21.751912 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+
+I, [2016-07-24T20:39:28.029850 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:39:28 -0400
+I, [2016-07-24T20:39:28.035671 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:39:28.040463 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (0.3ms)
+D, [2016-07-24T20:39:28.054368 #17653] DEBUG -- :   [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+E, [2016-07-24T20:39:28.054771 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:39:28.057670 #17653]  INFO -- : Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.7ms)
+F, [2016-07-24T20:39:28.064456 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+
+I, [2016-07-24T20:39:28.801900 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:39:28 -0400
+I, [2016-07-24T20:39:28.806113 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:39:28.809097 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (0.2ms)
+D, [2016-07-24T20:39:28.818372 #17653] DEBUG -- :   [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+E, [2016-07-24T20:39:28.818728 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:39:28.822285 #17653]  INFO -- : Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.5ms)
+F, [2016-07-24T20:39:28.829858 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+
+I, [2016-07-24T20:40:06.111593 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:40:06 -0400
+I, [2016-07-24T20:40:06.115702 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:40:06.118716 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (0.2ms)
+D, [2016-07-24T20:40:06.125433 #17653] DEBUG -- :   [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+E, [2016-07-24T20:40:06.125640 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:40:06.127257 #17653]  INFO -- : Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.4ms)
+F, [2016-07-24T20:40:06.130606 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+
+I, [2016-07-24T20:40:06.815441 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:40:06 -0400
+I, [2016-07-24T20:40:06.819425 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:40:06.822778 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (0.2ms)
+D, [2016-07-24T20:40:06.830345 #17653] DEBUG -- :   [1m[35mUser Load (2.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+E, [2016-07-24T20:40:06.830748 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:40:06.833626 #17653]  INFO -- : Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.4ms)
+F, [2016-07-24T20:40:06.840387 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+
+I, [2016-07-24T20:40:07.132485 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:40:07 -0400
+I, [2016-07-24T20:40:07.136324 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:40:07.139392 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (0.2ms)
+D, [2016-07-24T20:40:07.147065 #17653] DEBUG -- :   [1m[36mUser Load (2.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+E, [2016-07-24T20:40:07.147411 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:40:07.150842 #17653]  INFO -- : Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.6ms)
+F, [2016-07-24T20:40:07.158863 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+
+I, [2016-07-24T20:40:07.345496 #17653]  INFO -- : Started GET "/" for 192.168.1.1 at 2016-07-24 20:40:07 -0400
+I, [2016-07-24T20:40:07.347513 #17653]  INFO -- : Processing by PageController#index as HTML
+I, [2016-07-24T20:40:07.349013 #17653]  INFO -- :   Rendered page/index.html.erb within layouts/application (0.1ms)
+D, [2016-07-24T20:40:07.352684 #17653] DEBUG -- :   [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+E, [2016-07-24T20:40:07.352868 #17653] ERROR -- : PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+I, [2016-07-24T20:40:07.354269 #17653]  INFO -- : Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.2ms)
+F, [2016-07-24T20:40:07.357051 #17653] FATAL -- : 
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "users" does not exist
+LINE 1: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  O...
+                               ^
+: SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1):
+    14:  <div class="eric_navItems">
+    15:    <%= link_to 'Home', root_path %>
+    16:    <%= link_to 'Posts', posts_path %>
+    17:    <% if current_user %>
+    18:    Logged in as <%= current_user.email %>.
+    19:    <%= link_to "Log Out", logout_path %>
+    20:    <% else %>
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__231881662256505555_47091148037600'
+
+

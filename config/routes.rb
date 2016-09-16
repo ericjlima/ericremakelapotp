@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   resources :users
   get 'page/index'
   get 'portfolio', to: 'portfolio#index', as: 'portfolio'
+  get 'simplegrid', to: 'simplegrid#index', as: 'simplegrid'
+  get 'bio', to: 'bio#index', as: 'bio'
   root 'page#index'
 end

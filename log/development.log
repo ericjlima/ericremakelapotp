@@ -2647,3 +2647,604 @@ Started GET "/assets/vendor/modernizr-2.6.2.min.self-d11431eff7ef26ba51c7b399010
 
 
 Started GET "/assets/application.self-86a481cf373c34c351cbbeca1a7f69a4ba03975f0daa909aa68c4d1c3783bf12.js?body=1" for ::1 at 2016-07-17 21:46:21 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-24 19:01:32 -0400
+
+PG::ConnectionBad (FATAL:  password authentication failed for user "rails"
+FATAL:  password authentication failed for user "rails"
+):
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/eric/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/eric/.rbenv/versions/2.3.1/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/connection_handling.rb:87:in `connection'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/migration.rb:383:in `connection'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.4/lib/active_record/migration.rb:370:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.4/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.4/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.4/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.4/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.4/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.4/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.4/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/static.rb:116:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.4/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.4/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+  vendor/bundle/ruby/2.3.0/gems/puma-3.4.0/lib/puma/configuration.rb:224:in `call'
+  vendor/bundle/ruby/2.3.0/gems/puma-3.4.0/lib/puma/server.rb:569:in `handle_request'
+  vendor/bundle/ruby/2.3.0/gems/puma-3.4.0/lib/puma/server.rb:406:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/puma-3.4.0/lib/puma/server.rb:271:in `block in run'
+  vendor/bundle/ruby/2.3.0/gems/puma-3.4.0/lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-24 19:19:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (71.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PageController#index as HTML
+  Rendered page/index.html.erb within layouts/application (3.5ms)
+  [1m[35mUser Load (44.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 8696ms (Views: 8427.8ms | ActiveRecord: 239.2ms)
+
+
+Started GET "/assets/application.self-dea126f7c2bd371e8934a16ec51b7e0dfa1826f9b1df545160eb5f5c18d19c3e.css?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap.min.self-075878ec6a19d24f3b46052eb9e0e5bb5c2a098ac50d05d8e3a21309d129273a.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/main.self-27b6d21366e04243b2d25b1b6a1ef1e5917c49839ff61fca7b76fe59ff685dbe.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/plugins.self-a4e8052185affb93a6b30be2a8d020bfcd087163d6a75e1a5647bea6463b381f.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/vendor/modernizr-2.6.2.min.self-d11431eff7ef26ba51c7b399010b1529d0b66b42a2ec03d027e7965848e88e0a.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/skrollr.self-a64259e03a4d255c9d269e4bd8a1c558ab781940ccee6e1fe49772441c3f0ff1.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/vendor/jquery-1.9.1.min.self-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/assets/application.self-86a481cf373c34c351cbbeca1a7f69a4ba03975f0daa909aa68c4d1c3783bf12.js?body=1" for 127.0.0.1 at 2016-07-24 19:19:52 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-24 19:23:49 -0400
+Processing by PageController#index as HTML
+  Rendered page/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 555ms (Views: 552.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.self-dea126f7c2bd371e8934a16ec51b7e0dfa1826f9b1df545160eb5f5c18d19c3e.css?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:50 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/bootstrap.min.self-075878ec6a19d24f3b46052eb9e0e5bb5c2a098ac50d05d8e3a21309d129273a.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/main.self-27b6d21366e04243b2d25b1b6a1ef1e5917c49839ff61fca7b76fe59ff685dbe.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/plugins.self-a4e8052185affb93a6b30be2a8d020bfcd087163d6a75e1a5647bea6463b381f.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/skrollr.self-a64259e03a4d255c9d269e4bd8a1c558ab781940ccee6e1fe49772441c3f0ff1.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/vendor/jquery-1.9.1.min.self-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/vendor/modernizr-2.6.2.min.self-d11431eff7ef26ba51c7b399010b1529d0b66b42a2ec03d027e7965848e88e0a.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/assets/application.self-86a481cf373c34c351cbbeca1a7f69a4ba03975f0daa909aa68c4d1c3783bf12.js?body=1" for 127.0.0.1 at 2016-07-24 19:23:51 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2016-07-24 19:33:58 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 467ms (Views: 464.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-07-24 19:43:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (6.1ms)
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 1045ms (Views: 1018.2ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/application.self-dea126f7c2bd371e8934a16ec51b7e0dfa1826f9b1df545160eb5f5c18d19c3e.css?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:08 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/bootstrap.min.self-075878ec6a19d24f3b46052eb9e0e5bb5c2a098ac50d05d8e3a21309d129273a.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/plugins.self-a4e8052185affb93a6b30be2a8d020bfcd087163d6a75e1a5647bea6463b381f.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/main.self-27b6d21366e04243b2d25b1b6a1ef1e5917c49839ff61fca7b76fe59ff685dbe.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/skrollr.self-a64259e03a4d255c9d269e4bd8a1c558ab781940ccee6e1fe49772441c3f0ff1.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/vendor/jquery-1.9.1.min.self-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/vendor/modernizr-2.6.2.min.self-d11431eff7ef26ba51c7b399010b1529d0b66b42a2ec03d027e7965848e88e0a.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/assets/application.self-86a481cf373c34c351cbbeca1a7f69a4ba03975f0daa909aa68c4d1c3783bf12.js?body=1" for 127.0.0.1 at 2016-07-24 19:43:09 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2016-07-24 19:51:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (4.8ms)
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 5585ms (Views: 5540.8ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-07-24 19:51:33 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 522ms (Views: 519.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-dea126f7c2bd371e8934a16ec51b7e0dfa1826f9b1df545160eb5f5c18d19c3e.css?body=1" for 127.0.0.1 at 2016-07-24 19:51:34 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:34 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:34 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:34 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:34 -0400
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:34 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:34 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:34 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:34 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:34 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:34 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/bootstrap.min.self-075878ec6a19d24f3b46052eb9e0e5bb5c2a098ac50d05d8e3a21309d129273a.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/plugins.self-a4e8052185affb93a6b30be2a8d020bfcd087163d6a75e1a5647bea6463b381f.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/main.self-27b6d21366e04243b2d25b1b6a1ef1e5917c49839ff61fca7b76fe59ff685dbe.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/skrollr.self-a64259e03a4d255c9d269e4bd8a1c558ab781940ccee6e1fe49772441c3f0ff1.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/vendor/jquery-1.9.1.min.self-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/vendor/modernizr-2.6.2.min.self-d11431eff7ef26ba51c7b399010b1529d0b66b42a2ec03d027e7965848e88e0a.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/assets/application.self-86a481cf373c34c351cbbeca1a7f69a4ba03975f0daa909aa68c4d1c3783bf12.js?body=1" for 127.0.0.1 at 2016-07-24 19:51:35 -0400
+
+
+Started GET "/login" for 127.0.0.1 at 2016-07-24 20:37:28 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL  ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 492ms (Views: 489.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-dea126f7c2bd371e8934a16ec51b7e0dfa1826f9b1df545160eb5f5c18d19c3e.css?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/bootstrap.min.self-075878ec6a19d24f3b46052eb9e0e5bb5c2a098ac50d05d8e3a21309d129273a.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/main.self-27b6d21366e04243b2d25b1b6a1ef1e5917c49839ff61fca7b76fe59ff685dbe.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/plugins.self-a4e8052185affb93a6b30be2a8d020bfcd087163d6a75e1a5647bea6463b381f.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/skrollr.self-a64259e03a4d255c9d269e4bd8a1c558ab781940ccee6e1fe49772441c3f0ff1.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/vendor/modernizr-2.6.2.min.self-d11431eff7ef26ba51c7b399010b1529d0b66b42a2ec03d027e7965848e88e0a.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/application.self-86a481cf373c34c351cbbeca1a7f69a4ba03975f0daa909aa68c4d1c3783bf12.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+
+
+Started GET "/assets/vendor/jquery-1.9.1.min.self-4b58dfeb119b2dd15f54e0a074cf8eb63204c8b03d45056e0b514e042f36aa44.js?body=1" for 127.0.0.1 at 2016-07-24 20:37:29 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.7ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (15.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (12.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+DEPRECATION WARNING on line 174, column 131 of /home/eric/workspace/ericvibe/app/assets/stylesheets/portfolio.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
+DEPRECATION WARNING on line 174, column 131 of /home/eric/workspace/ericvibe/app/assets/stylesheets/portfolio.scss:
+Unescaped multiline strings are deprecated and will be removed in a future version of Sass.
+To include a newline in a string, use "\a" or "\a " as in CSS.
+
+
