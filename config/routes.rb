@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'portfolio', to: 'portfolio#index', as: 'portfolio'
   get 'bio', to: 'bio#index', as: 'bio'
   get 'simplegrid', to: 'simplegrid#index', as: 'simplegrid'
+  get 'resume', to: 'resume#index', as: 'resume'
   get 'v', to: 'v#index', as: 'v'
   root 'page#index'
 end
